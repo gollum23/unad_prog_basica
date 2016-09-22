@@ -31,11 +31,12 @@
                 <div class="col-xs-4 col-xs-offset-4">
                     <div class="form-group">
                         <label for="number_one" >Primer número</label>
-                        <input class="form-control" type="text" id="number_one" name="number_one">
+                        <input class="form-control" type="text" id="number_one" name="number_one"
+                               value=<?=$_POST['number_one'];?> >
                     </div>
                     <div class="form-group">
                         <label for="number_two">Segundo número</label>
-                        <input class="form-control" type="text" id="number_two" name="number_two">
+                        <input class="form-control" type="text" id="number_two" name="number_two" value=<?=$_POST['number_two'];?> >
                     </div>
                     <button type="submit" class="btn btn-success">Calcular!</button>
                 </div>
@@ -83,11 +84,13 @@
                 &ltdiv class="col-xs-4 col-xs-offset-4"&gt
                     &ltdiv class="form-group"&gt
                         &ltlabel for="number_one" &gtPrimer número&lt/label&gt
-                        &ltinput class="form-control" type="text" id="number_one" name="number_one"&gt
+                        &ltinput class="form-control" type="text" id="number_one" name="number_one"
+                                 value=&lt?=$_POST['number_one'];?&gt&gt
                     &lt/div&gt
                     &ltdiv class="form-group"&gt
                         &ltlabel for="number_two"&gtSegundo número&lt/label&gt
-                        &ltinput class="form-control" type="text" id="number_two" name="number_two"&gt
+                        &ltinput class="form-control" type="text" id="number_two" name="number_two"
+                                 value=&lt?=$_POST['number_two'];?&gt&gt
                     &lt/div&gt
                     &ltbutton type="submit" class="btn btn-success"&gtCalcular!&lt/button&gt
                 &lt/div&gt

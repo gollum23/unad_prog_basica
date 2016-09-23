@@ -31,7 +31,7 @@
                     <div class="panel-heading">Ejercicio 2</div>
                     <div class="panel-body">
                         <p>Por medio de un formulario, pedir la base y el exponente, y realizar el cálculo mediante sumas</p>
-                        <p><a href="#">Ir al ejercicio</a></p>
+                        <p><a href="ejercicio_2/">Ir al ejercicio</a></p>
                     </div>
                 </div>
                 <div class="panel panel-primary">
@@ -39,7 +39,7 @@
                     <div class="panel-body">
                         <p>Mediante un formulario pedir un numero inicial y un número final, e indicar de estos números los que
                             son primos y cuantos no son primos</p>
-                        <p><a href="#">Ir al ejercicio</a></p>
+                        <p><a href="ejercicio_3/">Ir al ejercicio</a></p>
                     </div>
                 </div>
                 <div class="panel panel-primary">
@@ -47,7 +47,7 @@
                     <div class="panel-body">
                         <p>Un script debe pedirle al usuario que digite la cantidad de números a generar, luego se debe crear la
                             siguiente secuencia (1, 5, 6, 10, 11, 15, 16, …)</p>
-                        <p><a href="#">Ir al ejercicio</a></p>
+                        <p><a href="ejercicio_4/">Ir al ejercicio</a></p>
                     </div>
                 </div>
                 <div class="panel panel-primary">
@@ -55,7 +55,7 @@
                     <div class="panel-body">
                         <p>Diseñe un programa que permita ingresar la edad del usuario y otro número cualquiera (a).</p>
                         <p>El programa sumará el número “a” a la edad ingresada y generará la tabla de multiplicar de este número</p>
-                        <p><a href="#">Ir al ejercicio</a></p>
+                        <p><a href="ejercicio_5/">Ir al ejercicio</a></p>
                     </div>
                 </div>
             </div>

@@ -49,23 +49,32 @@
                 $exp = $_POST['exp'];
 
                 $total = $base;
+        ?>
+            <br>
+            <div class="row show-grid">
+                <div class="col-xs-4 col-xs-offset-4">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            Respuesta
+                        </div>
+                        <div class="panel-body">
+        <?php
                 for ($i = 1; $i < $exp; $i ++) {
                     $sum = 0;
                     for ($j = 1; $j <= $base; $j++) {
+        ?>
+                            <p><?=$sum;?> + <?=$total;?> = <?= $sum + $total;?></p>
+        <?php
                         $sum += $total;
                     }
                     $total = $sum;
+        ?>
+                    <br>
+        <?php
                 }
         ?>
-                <br>
-                <div class="row show-grid">
-                    <div class="col-xs-4 col-xs-offset-4">
-                        <div class="panel panel-success">
-                            <div class="panel-heading">
-                                Respuesta
-                            </div>
-                            <div class="panel-body">
-                                <?=$total;?>
+
+                                <p>Total: <?=$total;?></p>
                             </div>
                         </div>
                     </div>
@@ -98,19 +107,10 @@
         &lt/form&gt
 
         &lt?php
-        if (isset($_POST['base']) and isset($_POST['exp'])) {
-            $base = $_POST['base'];
-            $exp = $_POST['exp'];
-
-            $total = $base;
-            for ($i = 1; $i &lt $exp; $i ++) {
-                $sum = 0;
-                for ($j = 1; $j &lt= $base; $j++) {
-                    $sum += $total;
-                }
-                $total = $sum;
-            }
-            ?&gt
+            if (isset($_POST['base']) and isset($_POST['exp'])) {
+                $base = $_POST['base'];
+                $exp = $_POST['exp'];
+        ?&gt
             &ltbr&gt
             &ltdiv class="row show-grid"&gt
                     &ltdiv class="col-xs-4 col-xs-offset-4"&gt
@@ -119,7 +119,24 @@
                                 Respuesta
                             &lt/div&gt
                             &ltdiv class="panel-body"&gt
-                                &lt?=$total;?&gt
+        &lt?php
+            $total = $base;
+            for ($i = 1; $i &lt $exp; $i ++) {
+                $sum = 0;
+                for ($j = 1; $j &lt= $base; $j++) {
+        ?&gt
+            &ltp&gt&lt?=$sum;?&gt + &lt?=$total;?&gt = &lt?= $sum + $total;?&gt&lt/p&gt
+        &lt?php
+                    $sum += $total;
+                }
+                $total = $sum;
+        ?&gt
+                    &ltbr&gt
+        &lt?php
+            }
+        ?&gt
+
+                                &ltp&gtTotal: &lt?=$total;?&gt&lt/p&gt
                             &lt/div&gt
                         &lt/div&gt
                     &lt/div&gt
